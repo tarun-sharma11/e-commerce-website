@@ -2,6 +2,7 @@ import { Main } from "./components/Main";
 import { Navbar } from "./components/Navbar"
 import { Details } from "./components/Details"
 import { Cart } from "./components/Cart"
+import { Profile } from "./components/Profile"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from "react";
 const App = ()=>{
@@ -54,6 +55,7 @@ const App = ()=>{
           <Route path="/" element={<Main data={data} />} />
           <Route path="/details/:id" element={<Details data={data} reviews={reviews} onDelete={deleteReview} onAdd={addReview} onBuy={addProduct}/>}></Route>
           <Route path="/cart" element={<Cart carts={carts} onDelete={deleteCart} handleQuantityChange={updateQuan}/>} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
     </Router>
   )

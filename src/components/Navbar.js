@@ -13,7 +13,7 @@ export const Navbar = () => {
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
-            <a href="./profile.html"><img src='/assets/person.svg' alt="Logo" width="30" height="30" /></a>
+            <Link to={`/profile`}><img src='/assets/person.svg' alt="Logo" width="30" height="30" /></Link>
             <Link to={`/cart`}><img src='/assets/cart.svg' alt="Logo" width="30" height="30" /></Link>
         </div>
         </nav>
